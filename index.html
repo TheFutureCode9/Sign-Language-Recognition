@@ -1,0 +1,64 @@
+ 
+<html>
+    <head>
+      <title>gesture Web App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=D0v9Ar8STW4iAKLU3E_0Y5z1FZnfsw311wGIclSAAbKyaLwh52-aMSVZUt0j_wfssVKc9eiw_RvSZUqrGVv_eRE5-ncu7Lq0m31DdShS7y-Hgm-HxQwe1oMEnEckteJw" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+        <h3 class="btn btn-info heading">Sign Language of the Alphabet
+        <br>
+        <span>&#128076;</span>
+        <span>&#9996;</span>
+        <span>&#9994;</span>
+        </h3>
+  
+        <br><br>
+  
+        <p style="font-size: 22px;">Capture your sign/gesture and</p>
+        <p style="font-size: 18px;">view the letter</p>
+        <p style="font-size: 30px;">
+          
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Webcam View - </label>
+          <div id="camera"></div>
+          <br><br>
+          <button onclick="take_snapshot();" class="btn btn-primary">Capture Image</button>
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Letter Scanned is..</label>
+          <p class="object_name" id="result_object_name"></p>
+          <p class="gesture_icon" id="result_object_gesture_icon"></p>
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Snapshot - </label>
+          <div id="result"></div>
+          <br><br>
+          <button onclick="check();" class="btn btn-success">Predict Hand Gesture</button>
+         </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
